@@ -1,3 +1,17 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<!--<app-demo-form-sku-builder></app-demo-form-sku-builder>-->
-<app-form-ng-model></app-form-ng-model>
+<div class="page-header">
+    <div class="container">
+        <h1> Routing Sample</h1>
+        <div class="navLinks">
+            <a routerLink="/home">Home</a>
+            <a routerLink="/about">About us</a>
+            <a routerLink="/contact">Contact us</a>
+            <a routerLink="/contacts">Home</a>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
