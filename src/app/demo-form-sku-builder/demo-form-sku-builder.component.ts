@@ -20,6 +20,18 @@ export class DemoFormSkuBuilderComponent implements OnInit {
     });
 
     this.sku = this.myForm.controls['sku'];
+
+    this.sku.valueChanges.subscribe(
+        (value: string) => {
+            console.log('SKU value changed to: ', value)
+        }
+    );
+
+    this.myForm.valueChanges.subscribe(
+        (value: any) => {
+            console.log('Form chanegd')
+        }
+    );
   }
 
   ngOnInit() {}
